@@ -146,7 +146,7 @@ func ToSnake(s string) string {
 				n = ""
 				iReal = -1
 			}
-		} else if v == ' ' || v == '_' || v == '-' {
+		} else if v == ' ' || v == '_' {
 			// replace spaces/underscores with delimiters
 			bits = append(bits, strings.ToLower(n))
 			n = ""

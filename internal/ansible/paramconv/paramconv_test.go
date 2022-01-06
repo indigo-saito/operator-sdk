@@ -147,6 +147,11 @@ func TestToSnake(t *testing.T) {
 			want: "var",
 		},
 		{
+			name: "should keep hyphen",
+			args: args{"/tenant-admin"},
+			want: "/tenant-admin",
+		},
+		{
 			name: "should convert to Snake when is only numbers",
 			args: args{"888"},
 			want: "888",
